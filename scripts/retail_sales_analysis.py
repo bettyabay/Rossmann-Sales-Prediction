@@ -141,7 +141,7 @@ def plot_sales_vs_customers(df):
     plt.ylabel('Sales')
     plt.show()
 
-# Task 1.5: Promo effect on sales and customers
+# Task 1.5: Promo effect on sales and customers +
 def plot_promo_effect(df):
     logging.info("Plotting promo effect over time...")
     monthly_promo_sales = df.groupby([df.index.to_period('M'), 'Promo'])['Sales'].mean().unstack()
