@@ -1,0 +1,19 @@
+2025-01-03 16:58:58,777 - ERROR - Error plotting trends during store opening and closing times: Could not interpret value `Time` for `x`. An entry with this name does not appear in `data`.
+2025-01-03 17:05:52,252 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-03 17:19:43,299 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-03 17:25:23,730 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-03 18:22:15,941 - INFO - Promotion distribution plotted successfully.
+2025-01-03 18:37:50,671 - ERROR - Error plotting sales behavior: Could not interpret value `Date` for `x`. Value is a string, but `data` was not passed.
+2025-01-03 19:07:48,284 - INFO - Promotion distribution plotted successfully.
+2025-01-03 19:09:59,305 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-03 19:10:40,790 - INFO - Analyzing sales behavior before, during, and after holidays...
+2025-01-03 19:10:41,330 - INFO - In the data, stores were closed 172817 times on given days.
+2025-01-03 19:10:41,330 - INFO - Out of those, 18264 times it was closed due to school holidays.
+2025-01-03 19:10:41,330 - INFO - Stores were closed 30140 times due to state holidays (bank, Easter, or Christmas).
+2025-01-03 19:10:41,330 - INFO - However, 139610 times stores were closed with no apparent reason (no holidays announced).
+2025-01-03 19:10:42,392 - INFO - Average sales during holidays: 258.1595813204509
+2025-01-03 19:10:42,424 - INFO - Average sales before holidays: 5632.308307613169
+2025-01-03 19:10:42,426 - INFO - Average sales after holidays: 6874.59061605476
+2025-01-03 19:10:42,886 - INFO - Holiday sales comparison plot saved as 'holiday_sales_comparison.png'.
+2025-01-03 21:12:41,757 - INFO - Plotting sales vs customers scatter plot...
+2025-01-03 21:34:35,880 - INFO - Plotting weekly sales...
