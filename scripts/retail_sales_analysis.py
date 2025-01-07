@@ -141,7 +141,7 @@ def plot_sales_vs_customers(df):
     plt.ylabel('Sales')
     plt.show()
 
-# Task 1.5: Promo effect on sales and customers
+# Task 1.5: Promo effect on sales and customers +
 def plot_promo_effect(df):
     logging.info("Plotting promo effect over time...")
     monthly_promo_sales = df.groupby([df.index.to_period('M'), 'Promo'])['Sales'].mean().unstack()
@@ -157,7 +157,7 @@ def plot_promo_effect(df):
 # Task 1.6: Determine effective promo deployment
 def effective_promo_deployment(df, store_col, promo_col, sales_col):
     logging.info("Analyzing effective promo deployment strategies.")
-    promo_sales = data.groupby(store_col)[[promo_col, sales_col]].mean()
+    promo_sales = df.groupby(store_col)[[promo_col, sales_col]].mean()
     logging.debug("Average promo and sales per store:\n%s", promo_sales)
 
 
@@ -287,8 +287,8 @@ def plot_acf_pacf(df):
 
 def plot_sales_heatmap(df):
     logging.info("Plotting sales heatmap by day of week and month...")
-    df['DayOfWeek'] = df.index.dayofweek
-    df['Month'] = df.index.month
+    df['DayOfWeek'] = df.index.DayOfWeek
+    df['Month'] = df.index.Month
     sales_heatmap = df.pivot_table(values='Sales', index='DayOfWeek', columns='Month', aggfunc='mean')
     
     plt.figure(figsize=(12, 8))
