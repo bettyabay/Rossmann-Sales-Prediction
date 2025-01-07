@@ -32,3 +32,65 @@
 2025-01-03 22:12:12,630 - INFO - Plotting weekly sales...
 2025-01-03 22:12:31,430 - INFO - Plotting monthly sales...
 2025-01-03 22:17:01,657 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-03 22:18:26,073 - INFO - Plotting promo effect over time...
+2025-01-03 23:00:59,870 - INFO - Analyzing effective promo deployment strategies.
+2025-01-03 23:02:57,799 - INFO - Analyzing effective promo deployment strategies.
+2025-01-03 23:03:50,708 - INFO - Analyzing effective promo deployment strategies.
+2025-01-03 23:07:14,300 - INFO - Analyzing effective promo deployment strategies.
+2025-01-03 23:17:24,552 - INFO - Promotion distribution plotted successfully.
+2025-01-03 23:19:20,227 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-03 23:19:22,159 - INFO - Analyzing sales behavior before, during, and after holidays...
+2025-01-03 23:19:22,838 - INFO - In the data, stores were closed 172817 times on given days.
+2025-01-03 23:19:22,840 - INFO - Out of those, 18264 times it was closed due to school holidays.
+2025-01-03 23:19:22,842 - INFO - Stores were closed 30140 times due to state holidays (bank, Easter, or Christmas).
+2025-01-03 23:19:22,843 - INFO - However, 139610 times stores were closed with no apparent reason (no holidays announced).
+2025-01-03 23:19:24,190 - INFO - Average sales during holidays: 258.1595813204509
+2025-01-03 23:19:24,192 - INFO - Average sales before holidays: 5632.308307613169
+2025-01-03 23:19:24,193 - INFO - Average sales after holidays: 6874.59061605476
+2025-01-03 23:19:24,455 - INFO - Holiday sales comparison plot saved as 'holiday_sales_comparison.png'.
+2025-01-03 23:19:52,819 - INFO - Plotting sales vs customers scatter plot...
+2025-01-03 23:20:26,930 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-03 23:24:35,217 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-04 11:27:12,446 - INFO - Analyzing effective promo deployment strategies.
+2025-01-04 11:27:53,842 - ERROR - Error plotting weekday and weekend sales: Could not interpret value `Weekend` for `x`. An entry with this name does not appear in `data`.
+2025-01-04 11:34:24,483 - INFO - Weekday and weekend sales plotted successfully.
+2025-01-07 15:48:18,491 - INFO - Promotion distribution plotted successfully.
+2025-01-07 15:49:57,877 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-07 15:49:59,775 - INFO - Analyzing sales behavior before, during, and after holidays...
+2025-01-07 15:50:00,641 - INFO - In the data, stores were closed 172817 times on given days.
+2025-01-07 15:50:00,641 - INFO - Out of those, 18264 times it was closed due to school holidays.
+2025-01-07 15:50:00,641 - INFO - Stores were closed 30140 times due to state holidays (bank, Easter, or Christmas).
+2025-01-07 15:50:00,641 - INFO - However, 139610 times stores were closed with no apparent reason (no holidays announced).
+2025-01-07 15:50:01,107 - INFO - Average sales during holidays: 258.1595813204509
+2025-01-07 15:50:01,107 - INFO - Average sales before holidays: 5632.308307613169
+2025-01-07 15:50:01,107 - INFO - Average sales after holidays: 6874.59061605476
+2025-01-07 15:50:01,282 - INFO - Holiday sales comparison plot saved as 'holiday_sales_comparison.png'.
+2025-01-07 15:50:15,334 - INFO - Plotting sales vs customers scatter plot...
+2025-01-07 15:50:39,603 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-07 15:51:05,624 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-07 15:55:08,747 - INFO - Promotion distribution plotted successfully.
+2025-01-07 15:55:57,775 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-07 15:55:59,357 - INFO - Analyzing sales behavior before, during, and after holidays...
+2025-01-07 15:55:59,707 - INFO - In the data, stores were closed 172817 times on given days.
+2025-01-07 15:55:59,707 - INFO - Out of those, 18264 times it was closed due to school holidays.
+2025-01-07 15:55:59,707 - INFO - Stores were closed 30140 times due to state holidays (bank, Easter, or Christmas).
+2025-01-07 15:55:59,707 - INFO - However, 139610 times stores were closed with no apparent reason (no holidays announced).
+2025-01-07 15:55:59,933 - INFO - Average sales during holidays: 258.1595813204509
+2025-01-07 15:55:59,940 - INFO - Average sales before holidays: 5632.308307613169
+2025-01-07 15:55:59,940 - INFO - Average sales after holidays: 6874.59061605476
+2025-01-07 15:56:00,106 - INFO - Holiday sales comparison plot saved as 'holiday_sales_comparison.png'.
+2025-01-07 15:56:11,395 - INFO - Plotting sales vs customers scatter plot...
+2025-01-07 15:56:35,239 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-07 21:45:05,272 - INFO - Promotion distribution plotted successfully.
+2025-01-07 21:46:47,207 - INFO - Trends during store opening and closing times plotted successfully.
+2025-01-07 21:46:49,699 - INFO - Analyzing sales behavior before, during, and after holidays...
+2025-01-07 21:46:50,292 - INFO - In the data, stores were closed 172817 times on given days.
+2025-01-07 21:46:50,293 - INFO - Out of those, 18264 times it was closed due to school holidays.
+2025-01-07 21:46:50,294 - INFO - Stores were closed 30140 times due to state holidays (bank, Easter, or Christmas).
+2025-01-07 21:46:50,295 - INFO - However, 139610 times stores were closed with no apparent reason (no holidays announced).
+2025-01-07 21:46:50,825 - INFO - Average sales during holidays: 258.1595813204509
+2025-01-07 21:46:50,827 - INFO - Average sales before holidays: 5632.308307613169
+2025-01-07 21:46:50,828 - INFO - Average sales after holidays: 6874.59061605476
+2025-01-07 21:46:50,994 - INFO - Holiday sales comparison plot saved as 'holiday_sales_comparison.png'.
+2025-01-07 21:47:04,665 - INFO - Plotting sales vs customers scatter plot...
+2025-01-07 21:47:30,452 - INFO - Plotting sales heatmap by day of week and month...
