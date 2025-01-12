@@ -1,15 +1,16 @@
-""" 1. Setting Up Logging
-Before diving into each task, initialize logging for the project: """
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px 
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.stattools import acf, pacf
 import holidays
 import logging
+
+""" 1. Setting Up Logging
+Before diving into each task, initialize logging for the project: """
 
 # Configure logging
 logging.basicConfig(
@@ -297,3 +298,76 @@ def plot_sales_heatmap(df):
     plt.xlabel('Month')
     plt.ylabel('Day of Week (0=Monday, 6=Sunday)')
     plt.show()
+
+
+
+# Store type Analysis
+def stores_per_storetype(df):
+    try:
+        logging.info("Starting to plot number of stores per store type.")
+        fig_num_store = px.bar(df, x='StoreType', y='Store', color='StoreType',
+                               title="Number of Stores per Store Type")
+        logging.info("Successfully created plot for number of stores per store type.")
+        return fig_num_store
+    except Exception as e:
+        logging.error(f"Error in stores_per_storetype: {e}")
+
+def total_sales_per_storetype(df):
+    try:
+        logging.info("Starting to plot total sales per store type.")
+        fig_total_sales = px.bar(df, x='StoreType', y='Sales', color='StoreType',
+                                 title="Total Sales per Store Type (in Billions)",
+                                 labels={'Sales': 'Sales (in Billions)'})
+        logging.info("Successfully created plot for total sales per store type.")
+        return fig_total_sales
+    except Exception as e:
+        logging.error(f"Error in total_sales_per_storetype: {e}")
+
+def totalnumber_of_customers_per_storetype(df):
+    try:
+        logging.info("Starting to plot total number of customers per store type.")
+        fig_total_customers = px.bar(df, x='StoreType', y='Customers', color='StoreType',
+                                     title="Total Number of Customers per Store Type (in Millions)",
+                                     labels={'Customers': 'Customers (in Millions)'})
+        logging.info("Successfully created plot for total number of customers per store type.")
+        return fig_total_customers
+    except Exception as e:
+        logging.error(f"Error in totalnumber_of_customers_per_storetype: {e}")
+
+def average_sales_per_storetype(df):
+    try:
+        logging.info("Starting to calculate and plot average sales per store type.")
+        grouped_train_store_avg = df.groupby(by="StoreType").agg({"Sales": "mean"}).reset_index()
+        logging.info("Data grouped and average sales calculated.")
+        fig_avg_sales = px.bar(grouped_train_store_avg, x='StoreType', y='Sales', color='StoreType',
+                               title="Average Sales per Store Type",
+                               labels={'Sales': 'Sales (in Thousands)'})
+        logging.info("Successfully created plot for average sales per store type.")
+        return fig_avg_sales
+    except Exception as e:
+        logging.error(f"Error in average_sales_per_storetype: {e}")
+
+def average_number_of_customers_per_storetype(df):
+    try:
+        logging.info("Starting to calculate and plot average number of customers per store type.")
+        grouped_train_store_avg = df.groupby(by="StoreType").agg({"Customers": "mean"}).reset_index()
+        logging.info("Data grouped and average number of customers calculated.")
+        fig_avg_customers = px.bar(grouped_train_store_avg, x='StoreType', y='Customers', color='StoreType',
+                                   title="Average Number of Customers per Store Type",
+                                   labels={'Customers': 'Customers (in Thousands)'})
+        fig_avg_customers.update_yaxes(tickformat='0.0f Thousand')
+        logging.info("Successfully created plot for average number of customers per store type.")
+        return fig_avg_customers
+    except Exception as e:
+        logging.error(f"Error in average_number_of_customers_per_storetype: {e}")
+
+def average_spending_per_customer_in_each_storetype(df):
+    try:
+        logging.info("Starting to plot average spending per customer in each store type.")
+        fig_avg_spending = px.bar(df, x='StoreType', y='SalesperCustomer', color='StoreType',
+                                  title="Average Spending per Customer in each Store Type",
+                                  labels={'SalesperCustomer': 'Spending (in Thousands)'})
+        logging.info("Successfully created plot for average spending per customer in each store type.")
+        return fig_avg_spending
+    except Exception as e:
+        logging.error(f"Error in average_spending_per_customer_in_each_storetype: {e}")

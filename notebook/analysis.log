@@ -94,3 +94,21 @@
 2025-01-07 21:46:50,994 - INFO - Holiday sales comparison plot saved as 'holiday_sales_comparison.png'.
 2025-01-07 21:47:04,665 - INFO - Plotting sales vs customers scatter plot...
 2025-01-07 21:47:30,452 - INFO - Plotting sales heatmap by day of week and month...
+2025-01-07 23:24:58,745 - INFO - Starting to plot number of stores per store type.
+2025-01-07 23:24:58,917 - ERROR - Error in stores_per_storetype: name 'px' is not defined
+2025-01-07 23:26:33,774 - INFO - Starting to plot number of stores per store type.
+2025-01-07 23:26:33,776 - ERROR - Error in stores_per_storetype: name 'px' is not defined
+2025-01-07 23:26:37,081 - INFO - Starting to plot number of stores per store type.
+2025-01-07 23:26:37,083 - ERROR - Error in stores_per_storetype: name 'px' is not defined
+2025-01-07 23:26:43,530 - INFO - Starting to plot number of stores per store type.
+2025-01-07 23:26:43,532 - ERROR - Error in stores_per_storetype: name 'px' is not defined
+2025-01-07 23:27:30,671 - INFO - Starting to plot number of stores per store type.
+2025-01-07 23:27:30,673 - ERROR - Error in stores_per_storetype: name 'px' is not defined
+2025-01-07 23:39:09,903 - INFO - Starting to plot number of stores per store type.
+2025-01-07 23:39:48,934 - INFO - Successfully created plot for number of stores per store type.
+2025-01-07 23:43:37,320 - INFO - Starting to plot total sales per store type.
+2025-01-07 23:43:40,244 - INFO - Successfully created plot for total sales per store type.
+2025-01-08 19:16:08,997 - INFO - Starting to plot number of stores per store type.
+2025-01-08 19:16:58,850 - INFO - Successfully created plot for number of stores per store type.
+2025-01-08 19:17:10,370 - INFO - Starting to plot total sales per store type.
+2025-01-08 19:17:11,232 - INFO - Successfully created plot for total sales per store type.
